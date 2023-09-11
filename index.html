@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>BugCatcher</title>
+</head>
+<body>
+    <div class="screen__start">
+        <h1>Catch The Insect</h1>
+        <button class="button" id="start-button">Play Game</button>
+    </div>
+
+    <div class="screen__select">
+        <h1>Choose a Insect</h1>
+        <ul class="insects-list">
+            <li>
+                <button class="choose-button">
+                    <p>Fly</p>
+                    <img src="./assets/fly.png">
+                </button>
+            </li>
+            <li>
+                <button class="choose-button">
+                    <p>Mosquito</p>
+                    <img src="./assets/mosquito.webp">
+                </button>
+            </li>
+            <li>
+                <button class="choose-button">
+                    <p>Spider</p>
+                    <img src="./assets/spider.png">
+                </button>
+            </li>
+            <li>
+                <button class="choose-button">
+                    <p>Roach</p>
+                    <img src="./assets/roach.png">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen__game" id="game-container">
+        <div class="info">
+            <h3 id="time" class="time">Time: 00:00</h3>
+            <h3 id="score" class="score">Score: 0</h3>
+        </div>
+        <h5 id="message" class="message">
+            Are you annoyed yet?
+        </h5>
+        <div class="spawn-zone">
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>

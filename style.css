@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  color: #fff;
+  background-color: #516dff;
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button {
+  padding: 15px 20px;
+  border: 0;
+  color: #516dff;
+  background-color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.choose-button {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+.choose-button:hover {
+  background-color: #fff;
+  color: #516dff;
+}
+
+.screen, .screen__game, .screen__select, .screen__start {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: margin 0.5s ease-out;
+}
+.screen__game {
+  justify-content: unset;
+  position: relative;
+}
+
+.info {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.message {
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  opacity: 0;
+}
+
+.spawn-zone {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.spawn-zone img {
+  position: absolute;
+  cursor: pointer;
+}
+.spawn-zone img:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */
